@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useContext} from 'react';
 import "./Navbar.css";
 import logo from "../../assets/logo.avif";
 import cart_icon from "../../assets/cart_icon.png";
@@ -7,8 +7,9 @@ import Cookies from 'js-cookie';
 import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("home");
-  // const { getTotalCartItems } = useContext(ShopContext);
+  
+  const [menu,setMenu]=useState("home")
+  const { getTotalCartItems } = useContext(ShopContext);
   const navigate = useNavigate();
   const jwtToken = Cookies.get("jwt_token");
 
@@ -51,14 +52,19 @@ const Navbar = () => {
           {menu === "kids" && <hr />}
         </li>
       </ul>
+      
 
       <div className="nav-login-cart">
+        <Link to="/cart"><img src={cart_icon} alt="" height="40px" /></Link>
+            <div className="nav-cart-count">{getTotalCartItems()}</div>
+          
         {jwtToken ? (
           <button onClick={handleLogout}>Logout</button>
         ) : (
           <Link to="/login">
             <button>Login</button>
           </Link>
+          
         )}
 
       </div>

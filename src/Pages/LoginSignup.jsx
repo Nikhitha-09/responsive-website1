@@ -50,7 +50,7 @@ const LoginSignup = () => {
         <div className="input-container">
           <label className="input-label" htmlFor="username">USERNAME</label>
           <input
-            // type="text"
+            type="text"
             id="username"
             className="username-input-field"
             value={username}
@@ -75,6 +75,25 @@ const LoginSignup = () => {
         {errorMsg && <p className="error-message">*{errorMsg}</p>}
       </form>
     </div>
+    // <div className='loginsignup'>
+    //   <div className="loginsignup-container">
+    //     <h1>Sign Up</h1>
+    //     <div className='loginsignup-fields'>
+    //       <input type='text' placeholder='Your Name'/>
+    //       <input type='email' placeholder='Email Address'/>
+    //       <input type='password' placeholder='Password'/>
+    //       <button>Continue</button>
+    //     </div>
+        
+    //     <p className="loginsignup-login">
+    //       Already have an account ? <span>Login here</span>
+    //     </p>
+    //     <div className='loginsignup-agree'>
+    //       <input type='checkbox' name='' id=''/>
+    //       <p>By continuing, i agree to the terms of use & privacy policy.</p>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 

@@ -21,6 +21,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import men_banner from "./assets/banner.jpg";
 import women_banner from "./assets/women_banner.avif";
 import kids_banner from "./assets/kids_banner.jpg";
+import NotFound from "./Pages/NotFound";
 
 const App = () => {
   return (
@@ -32,7 +33,7 @@ const App = () => {
 
         {/* Login Page */}
         <Route path="/login" element={<LoginSignup />} />
-
+        
         {/* Protected Route - Home with Offers, Popular, Newsletter */}
         <Route
           path="/home"
@@ -49,69 +50,25 @@ const App = () => {
         />
 
         {/* Protected Routes */}
-        <Route
-          path="/shop"
-          element={
-            <ProtectedRoute>
-              <Shop />
-            </ProtectedRoute>
-          }
+        <Route path="/shop" element={<ProtectedRoute><Shop /></ProtectedRoute>}
         />
-        <Route
-          path="/mens"
-          element={
-            <ProtectedRoute>
-              <ShopCategory banner={men_banner} category="men" />
-            </ProtectedRoute>
-          }
+        <Route path="/mens" element={<ProtectedRoute><ShopCategory banner={men_banner} category="men" /></ProtectedRoute>}
         />
-        <Route
-          path="/womens"
-          element={
-            <ProtectedRoute>
-              <ShopCategory banner={women_banner} category="women" />
-            </ProtectedRoute>
-          }
+        <Route path="/womens" element={<ProtectedRoute><ShopCategory banner={women_banner} category="women" /></ProtectedRoute>}
         />
-        <Route
-          path="/kids"
-          element={
-            <ProtectedRoute>
-              <ShopCategory banner={kids_banner} category="kid" />
-            </ProtectedRoute>
-          }
+        <Route path="/kids"element={<ProtectedRoute><ShopCategory banner={kids_banner} category="kid" /></ProtectedRoute>}
         />
-        <Route
-          path="/product"
-          element={
-            <ProtectedRoute>
-              <Product />
-            </ProtectedRoute>
-          }
+        <Route path="/product" element={<ProtectedRoute><Product /></ProtectedRoute>}
         />
-        <Route
-          path="/cart"
-          element={
-            <ProtectedRoute>
-              <Cart />
-            </ProtectedRoute>
-          }
+        <Route path="/product/:productId" element={<ProtectedRoute><Product /></ProtectedRoute>}
         />
-        <Route
-          path="/basic"
-          element={
-            <ProtectedRoute>
-              <Basic />
-            </ProtectedRoute>
-          }
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>}
         />
-        <Route
-          path="/offers"
-          element={
-            <ProtectedRoute>
-              <Offers />
-            </ProtectedRoute>
-          }
+        <Route path="/basic" element={<ProtectedRoute><Basic /></ProtectedRoute>}
+        />
+        <Route path="/offers" element={<ProtectedRoute><Offers /></ProtectedRoute>}
+        />
+        <Route path="*" element={<NotFound />} 
         />
       </Routes>
       <Footer />
