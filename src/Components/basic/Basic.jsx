@@ -1,29 +1,3 @@
-// import React from 'react'
-// import "./Basic.css"
-
-// import family from "../../assets/family.jpg"
-// const Basic = () => {
-//   return (
-//     <div className='hero'>
-//         <div className="hero-left">
-// <h2>Block buster  Deals !  Best Prices !</h2>
-       
-//         <div className="hero-hand-icon">
-//         <p>new</p>
-//         <p>collections</p>
-//         <p>for everyone</p>
-//         </div>
-//         </div>
-        
-//         <div className="hero-right">
-//   <img src={family} alt="" height="400px" />
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Basic
-
 import React from 'react';
 import './Basic.css';
 
@@ -38,20 +12,18 @@ import Newsletter from '../NewsLetter/NewsLetter';
 
 const Basic = () => {
   return (
+   
     <div className="basic-container">
-      {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-left">
-          <h2>Blockbuster Deals! Best Prices!</h2>
+          <h3 className='hero-left h2'>Blockbuster Deals!</h3>
+          <h3 className='hero-left h2'>Best Prices!</h3>
           <div className="hero-hand-icon">
             <i className="bi bi-arrow-right-circle"></i>
           </div>
-          <p>New</p>
-          <p>Collections</p>
-          <p>For Everyone</p>
-
+          <p className='hero-left h2'>New Collections For Everyone....</p>
           <div className="hero-latest-btn">
-            <div>Trending Collection</div>
+            <div className='hero-p'>Trending Collection</div>
             <img src={arrow_icon} alt="Arrow Icon" height="30px" />
           </div>
         </div>

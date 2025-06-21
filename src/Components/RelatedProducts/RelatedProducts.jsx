@@ -4,6 +4,7 @@ import Item from '../Item/Item'
 import data_product from '../../assets/data'
 const RelatedProducts = () => {
   return (
+    <div className='container'>
     <div className='relatedproducts'>
         <h1>Related Products</h1>
         <hr/>
@@ -13,6 +14,7 @@ const RelatedProducts = () => {
             })}
         </div>
     </div>
+  </div>
   )
 }
 

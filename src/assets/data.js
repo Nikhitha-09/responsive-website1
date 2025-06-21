@@ -1,5 +1,5 @@
 import p1_img from '../assets/p1.jfif'
-import p2 from '../assets/p2.png'
+import p2 from '../assets/3.jpg'
 import p3_img from '../assets/p3.avif'
 import p4 from '../assets/p4.png'
 

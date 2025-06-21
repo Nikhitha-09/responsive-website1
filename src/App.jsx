@@ -14,7 +14,7 @@ import Hero from "./Components/Hero/Hero";
 import Offers from "./Components/Offers/Offers";
 import Popular from "./Components/Popular/Popular";
 import Newsletter from "./Components/NewsLetter/NewsLetter";
-import Basic from "./Components/basic/basic";
+import Basic from "./Components/basic/Basic";
 
 import ProtectedRoute from "./ProtectedRoute";
 

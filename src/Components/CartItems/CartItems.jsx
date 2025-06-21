@@ -5,6 +5,7 @@ import { ShopContext } from '../../Context/ShopContext'
 const CartItems = () => {
     const { getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext(ShopContext);
     return (
+     
         <div className='cartItems'>
             <div className="cartitems-format-main">
                 <p>Products</p>
@@ -21,7 +22,7 @@ const CartItems = () => {
                         <div className='cartItems-format cartitems-format-main'>
                             <img src={e.image} alt="" height="100px" />
                             <p>{e.name}</p>
-                            <p>${e.new_price}</p>
+                            <p>Rs{e.new_price}</p>
                             <button className='cartitems-quantity'>
                                 {cartItems[e.id]}
                             </button>
@@ -39,7 +40,7 @@ const CartItems = () => {
                     <div>
                         <div className="cartitems-total-item">
                             <p>Subtotal</p>
-                            <p>${getTotalCartAmount()}</p>
+                            <p>Rs{getTotalCartAmount()}</p>
                         </div>
                         <hr/>
                         <div className="cartitems-total-item">
@@ -49,7 +50,7 @@ const CartItems = () => {
                         <hr/>
                         <div className="cartitems-total-item">
                             <p>Total</p>
-                            <p>${getTotalCartAmount()}</p>
+                            <p>Rs{getTotalCartAmount()}</p>
                         </div>
                     </div>
                     <button>PROCEED TO CHECKOUT</button>
@@ -58,7 +59,7 @@ const CartItems = () => {
                     <p>If you have a promo code, Enter it here</p>
                     <div className="cartitems-promobox">
                         <input type='text' placeholder='promo code'/>
-                        <button>submit</button>
+                        <button>Submit</button>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+/* Popular Section */
 .popular {
   display: flex;
   flex-direction: column;
@@ -9,20 +10,7 @@
   text-align: center;
 }
 
-.popular h1 {
-  color: #171717;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.popular hr {
-  width: 200px;
-  height: 6px;
-  border-radius: 10px;
-  background: #252525;
-  border: none;
-}
-
+/* Container for product items */
 .popular-item {
   margin-top: 50px;
   display: flex;
@@ -34,40 +22,78 @@
   padding: 0 20px;
 }
 
+/* Product Card Styling (child of .popular-item) */
+.popular-product-card {
+  width: 100%;
+  max-width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.popular-product-card:hover {
+  transform: scale(1.03);
+}
+
+.popular-product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.popular-product-card p {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ============ Responsive Styles ============ */
+
 /* Tablets (≤1024px) */
 @media (max-width: 1024px) {
-  .popular h1 {
-    font-size: 32px;
-  }
 
   .popular-item {
     gap: 25px;
+  }
+
+  .popular-product-card img {
+    height: 260px;
   }
 }
 
 /* Small Tablets / Large Phones (≤768px) */
 @media (max-width: 768px) {
-  .popular h1 {
-    font-size: 28px;
-  }
 
   .popular-item {
     gap: 20px;
+  }
+
+  .popular-product-card {
+    max-width: 45%;
+  }
+
+  .popular-product-card img {
+    height: 240px;
   }
 }
 
 /* Mobile Phones (≤480px) */
 @media (max-width: 480px) {
-  .popular h1 {
-    font-size: 24px;
-  }
-
-  .popular hr {
-    width: 150px;
-    height: 4px;
-  }
-
   .popular-item {
     gap: 15px;
+  }
+
+  .popular-product-card {
+    max-width: 90%;
+  }
+
+  .popular-product-card img {
+    height: 200px;
   }
 }

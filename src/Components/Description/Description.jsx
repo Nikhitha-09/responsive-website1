@@ -2,6 +2,7 @@ import React from 'react'
 import "./Description.css"
 const Description = () => {
   return (
+    <div className='container'>
     <div className='descriptionbox'>
         <div className="descriptionbox-navigator">
             <div className="descriptionbox-nav-box">
@@ -21,6 +22,7 @@ const Description = () => {
              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed doloremque facilis neque non nihil quam veritatis a. Ratione dolore debitis quia possimus natus quo consequatur exercitationem quae unde, laboriosam iure!</p>
             </div>
     </div>
+  </div>
   )
 }
 

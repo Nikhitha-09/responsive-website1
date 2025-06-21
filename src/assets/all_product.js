@@ -60,14 +60,14 @@ let all_product = [
     { id: 15, name: "Kurta", category: "men", image: p15_img, new_price: 78.0, old_price: 115.0 },
     { id: 16, name: "Skirt", category: "women", image:p16_img, new_price: 73.0, old_price: 110.0 },
 
-    { id: 21, name: "Denim Shirt", category: "kid", image: p21_img, new_price: 85.0, old_price: 140.0 },
-    { id: 23, name: "Cargo Pants", category: "kid", image:p23_img , new_price: 88.0, old_price: 130.0 },
-    { id: 25, name: "Trousers", category: "kid", image:p25_img , new_price: 76.0, old_price: 120.0 },
-    { id: 27, name: "Tank Top", category: "kid", image: p27_img, new_price: 49.0, old_price: 80.0 },
-    { id: 29, name: "Formal Pants", category: "kid", image:p29_img, new_price: 98.0, old_price: 160.0 },
-    { id: 31, name: "Leather Jacket", category: "kid", image: p31_img, new_price: 150.0, old_price: 250.0 },
-    { id: 33, name: "Gym Shorts", category: "kid", image: p33_img, new_price: 55.0, old_price: 90.0 },
-    { id:35, name: "Casual Blazer", category: "kid", image: p35_img, new_price: 105.0, old_price: 170.0 },
+    { id: 17, name: "Denim Shirt", category: "kid", image: p21_img, new_price: 85.0, old_price: 140.0 },
+    { id: 18, name: "Cargo Pants", category: "kid", image:p23_img , new_price: 88.0, old_price: 130.0 },
+    { id: 19, name: "Trousers", category: "kid", image:p25_img , new_price: 76.0, old_price: 120.0 },
+    { id: 20, name: "Tank Top", category: "kid", image: p27_img, new_price: 49.0, old_price: 80.0 },
+    { id: 21, name: "Formal Pants", category: "kid", image:p29_img, new_price: 98.0, old_price: 160.0 },
+    { id: 22, name: "Leather Jacket", category: "kid", image: p31_img, new_price: 150.0, old_price: 250.0 },
+    { id: 23, name: "Gym Shorts", category: "kid", image: p33_img, new_price: 55.0, old_price: 90.0 },
+    { id:24, name: "Casual Blazer", category: "kid", image: p35_img, new_price: 105.0, old_price: 170.0 },
     
 ]
 let userDetails=[

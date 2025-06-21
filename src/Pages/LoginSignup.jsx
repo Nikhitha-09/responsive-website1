@@ -5,7 +5,7 @@ import '../CSS/LoginSignup.css';
 import { useEffect } from 'react';
 // Simulated user list with fake JWTs
 const users = [
-  { username: "nikhi", password: "12345", token: "203319e7ebd5bc0b137d5f455712376a0aacd0558491c50a3ad6ab293f3ec9f4" },
+  { username: "nikhi", password: "12345", token: "fake-jwt-token-1" },
   { username: "admin", password: "admin123", token: "fake-jwt-token-2" },
 ];
 

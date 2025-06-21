@@ -7,6 +7,7 @@ const ProductDisplay = (props) => {
   const { product } = props;
   const {addTocart} = useContext(ShopContext);
   return (
+    <div className='container'>
     <div className='productdisplay'>
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
@@ -58,7 +59,7 @@ ${product.old_price}
   </div>
 </div>
       </div>
-    
+    </div>
   )
 }
 

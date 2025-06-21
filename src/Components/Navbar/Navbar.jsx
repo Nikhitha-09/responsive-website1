@@ -20,13 +20,18 @@ const Navbar = () => {
   
 
   return (
+
     <div className='navbar'>
       <div className="nav-logo">
         <img src={logo} alt="" height="50px" />
         <p>N Mart</p>
       </div>
 
-      <ul className='nav-menu'>
+      
+      <div className="nav-login-cart">
+        {jwtToken ? (
+          <>
+        <ul className='nav-menu'>
         <li onClick={() => setMenu("home")}>
           <Link to="/" style={{ textDecoration: "none", color: "#626262" }}>
             Home
@@ -54,12 +59,10 @@ const Navbar = () => {
       </ul>
       
 
-      <div className="nav-login-cart">
-        <Link to="/cart"><img src={cart_icon} alt="" height="40px" /></Link>
+          <Link to="/cart"><img src={cart_icon} alt="" height="40px" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}</div>
-          
-        {jwtToken ? (
           <button onClick={handleLogout}>Logout</button>
+          </>
         ) : (
           <Link to="/login">
             <button>Login</button>
@@ -69,6 +72,7 @@ const Navbar = () => {
 
       </div>
     </div>
+
   );
 };
 
