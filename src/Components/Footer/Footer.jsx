@@ -4,6 +4,8 @@ import logo from "../../assets/logo.avif"
 import instagram_icon from "../../assets/instagram.png"
 import facebook_icon from "../../assets/facebook.png"
 import whatsapp_icon from "../../assets/whatsapp.png"
+import About from '../../Pages/FooterPages/About'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -12,9 +14,9 @@ const Footer = () => {
             <p>N Mart</p>
         </div>
         <ul className='footer-links'>
-          <li>About</li>
-          <li>Products</li>
-          <li>Contact</li>
+          <li><Link to="/about" className="footer-link">About</Link></li>
+          <li><Link to="/products" className="footer-link">Products</Link></li>
+          <li><Link to="/contact" className="footer-link">Contact</Link></li>
         </ul>
         <div className='footer-social-icon'>
         <div className="footer-icon-container">

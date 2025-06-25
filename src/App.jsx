@@ -22,6 +22,9 @@ import men_banner from "./assets/banner.jpg";
 import women_banner from "./assets/women_banner.avif";
 import kids_banner from "./assets/kids_banner.jpg";
 import NotFound from "./Pages/NotFound";
+import About from "./Pages/FooterPages/About";
+import ProductsFooter from "./Pages/FooterPages/ProductsFooter";
+import Contact from "./Pages/FooterPages/Contact";
 
 const App = () => {
   return (
@@ -34,6 +37,11 @@ const App = () => {
         {/* Login Page */}
         <Route path="/login" element={<LoginSignup />} />
         
+        {/*Footer Page Route*/}
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<ProductsFooter />} />
+        <Route path="/contact" element={<Contact />} />
+
         {/* Protected Route - Home with Offers, Popular, Newsletter */}
         <Route
           path="/home"
